@@ -1,0 +1,21 @@
+{
+  "timestamp": "2026-03-01T21:31:01",
+  "paths": {
+    "google_bin": "GoogleNews-vectors-negative300.bin.gz",
+    "modified_npz": "outputs/debias/debiased_modified_vectors.npz",
+    "gender_dir_path": "outputs/prep/gender_direction.npy",
+    "occupations_path": "data/occupations.txt",
+    "rg_path": "data/rg65.csv",
+    "ws_path": "data/wordsim353.csv",
+    "msr_path": "data/questions-words.txt"
+  },
+  "settings": {
+    "topk_extremes": 20,
+    "topn_most_gendered": 50,
+    "direct_bias_c_list": [
+      1.0,
+      2.0,
+      3.0
+    ]
+  }
+}

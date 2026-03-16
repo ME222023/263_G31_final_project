@@ -1,0 +1,10 @@
+he,she
+man,woman
+father,mother
+boy,girl
+brother,sister
+son,daughter
+king,queen
+male,female
+him,her
+his,hers

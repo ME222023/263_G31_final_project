@@ -1,0 +1,178 @@
+{
+  "embedding_path": "GoogleNews-vectors-negative300.bin.gz",
+  "gender_subspace_report": "outputs/prep/gender_subspace_report.json",
+  "subspace_k": 3,
+  "vector_dim": 300,
+  "inputs": {
+    "target_words_path": "data/occupations.txt",
+    "gender_specific_words_path": null,
+    "equalize_pairs_path": "data/definitional_pairs.txt"
+  },
+  "neutralization": {
+    "total_target_words": 10,
+    "neutralized": 10,
+    "skipped_oov": 0,
+    "skipped_gender_specific": 0,
+    "skipped_zero_or_degenerate": 0,
+    "rows": [
+      {
+        "word": "doctor",
+        "status": "neutralized",
+        "token": "doctor"
+      },
+      {
+        "word": "nurse",
+        "status": "neutralized",
+        "token": "nurse"
+      },
+      {
+        "word": "engineer",
+        "status": "neutralized",
+        "token": "engineer"
+      },
+      {
+        "word": "teacher",
+        "status": "neutralized",
+        "token": "teacher"
+      },
+      {
+        "word": "scientist",
+        "status": "neutralized",
+        "token": "scientist"
+      },
+      {
+        "word": "programmer",
+        "status": "neutralized",
+        "token": "programmer"
+      },
+      {
+        "word": "homemaker",
+        "status": "neutralized",
+        "token": "homemaker"
+      },
+      {
+        "word": "manager",
+        "status": "neutralized",
+        "token": "manager"
+      },
+      {
+        "word": "lawyer",
+        "status": "neutralized",
+        "token": "lawyer"
+      },
+      {
+        "word": "librarian",
+        "status": "neutralized",
+        "token": "librarian"
+      }
+    ]
+  },
+  "equalization": {
+    "total_equalize_pairs": 10,
+    "equalized": 10,
+    "skipped_oov": 0,
+    "skipped_zero_or_degenerate": 0,
+    "rows": [
+      {
+        "left_word": "he",
+        "right_word": "she",
+        "left_token": "he",
+        "right_token": "she",
+        "status": "equalized",
+        "symmetry_error_l2": 1.6488572874435857e-16,
+        "midpoint_orth_error_l2": 3.054699937188987e-17
+      },
+      {
+        "left_word": "man",
+        "right_word": "woman",
+        "left_token": "man",
+        "right_token": "woman",
+        "status": "equalized",
+        "symmetry_error_l2": 7.159546511271211e-17,
+        "midpoint_orth_error_l2": 2.347992441503279e-17
+      },
+      {
+        "left_word": "father",
+        "right_word": "mother",
+        "left_token": "father",
+        "right_token": "mother",
+        "status": "equalized",
+        "symmetry_error_l2": 2.8825227568703763e-16,
+        "midpoint_orth_error_l2": 1.109422289729834e-16
+      },
+      {
+        "left_word": "boy",
+        "right_word": "girl",
+        "left_token": "boy",
+        "right_token": "girl",
+        "status": "equalized",
+        "symmetry_error_l2": 9.776245638629743e-17,
+        "midpoint_orth_error_l2": 1.0970368837379494e-16
+      },
+      {
+        "left_word": "brother",
+        "right_word": "sister",
+        "left_token": "brother",
+        "right_token": "sister",
+        "status": "equalized",
+        "symmetry_error_l2": 1.549085132333848e-16,
+        "midpoint_orth_error_l2": 3.127693077580196e-17
+      },
+      {
+        "left_word": "son",
+        "right_word": "daughter",
+        "left_token": "son",
+        "right_token": "daughter",
+        "status": "equalized",
+        "symmetry_error_l2": 1.3343141833168942e-16,
+        "midpoint_orth_error_l2": 1.6769155607547733e-16
+      },
+      {
+        "left_word": "king",
+        "right_word": "queen",
+        "left_token": "king",
+        "right_token": "queen",
+        "status": "equalized",
+        "symmetry_error_l2": 7.521592012334131e-17,
+        "midpoint_orth_error_l2": 1.048282920688682e-16
+      },
+      {
+        "left_word": "male",
+        "right_word": "female",
+        "left_token": "male",
+        "right_token": "female",
+        "status": "equalized",
+        "symmetry_error_l2": 1.4955141440496244e-16,
+        "midpoint_orth_error_l2": 1.0304575949583687e-16
+      },
+      {
+        "left_word": "him",
+        "right_word": "her",
+        "left_token": "him",
+        "right_token": "her",
+        "status": "equalized",
+        "symmetry_error_l2": 1.2060149560076938e-16,
+        "midpoint_orth_error_l2": 3.0791341698588326e-17
+      },
+      {
+        "left_word": "his",
+        "right_word": "hers",
+        "left_token": "his",
+        "right_token": "hers",
+        "status": "equalized",
+        "symmetry_error_l2": 3.5486114327177985e-16,
+        "midpoint_orth_error_l2": 1.3870942093153973e-16
+      }
+    ]
+  },
+  "outputs": {
+    "modified_vectors_npz": "outputs/debias/debiased_modified_vectors.npz",
+    "modified_token_count": 30,
+    "full_embedding_path": null
+  },
+  "notes": {
+    "method": "Hard Debias (neutralize + equalize)",
+    "neutralize": "Remove projection onto gender subspace for target neutral words.",
+    "equalize": "Make pair members symmetric in gender subspace while keeping shared orthogonal component."
+  }
+}

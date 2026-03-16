@@ -1,0 +1,101 @@
+{
+  "embedding_path": "GoogleNews-vectors-negative300.bin.gz",
+  "binary": true,
+  "vector_dim": 300,
+  "total_definitional_pairs": 10,
+  "usable_definitional_pairs": 10,
+  "usable_pairs": [
+    {
+      "left_original": "he",
+      "right_original": "she",
+      "left_token": "he",
+      "right_token": "she"
+    },
+    {
+      "left_original": "man",
+      "right_original": "woman",
+      "left_token": "man",
+      "right_token": "woman"
+    },
+    {
+      "left_original": "father",
+      "right_original": "mother",
+      "left_token": "father",
+      "right_token": "mother"
+    },
+    {
+      "left_original": "boy",
+      "right_original": "girl",
+      "left_token": "boy",
+      "right_token": "girl"
+    },
+    {
+      "left_original": "brother",
+      "right_original": "sister",
+      "left_token": "brother",
+      "right_token": "sister"
+    },
+    {
+      "left_original": "son",
+      "right_original": "daughter",
+      "left_token": "son",
+      "right_token": "daughter"
+    },
+    {
+      "left_original": "king",
+      "right_original": "queen",
+      "left_token": "king",
+      "right_token": "queen"
+    },
+    {
+      "left_original": "male",
+      "right_original": "female",
+      "left_token": "male",
+      "right_token": "female"
+    },
+    {
+      "left_original": "him",
+      "right_original": "her",
+      "left_token": "him",
+      "right_token": "her"
+    },
+    {
+      "left_original": "his",
+      "right_original": "hers",
+      "left_token": "his",
+      "right_token": "hers"
+    }
+  ],
+  "centered_matrix_shape": [
+    20,
+    300
+  ],
+  "k_used": 3,
+  "explained_variance_ratio_top_k": [
+    0.5716675024057103,
+    0.13191150249240888,
+    0.07861526316788436
+  ],
+  "gender_direction_norm": 1.0000000000000002,
+  "gender_direction_first_10_dims": [
+    -0.10101909690219274,
+    -0.11606309943580266,
+    -0.03909365633381873,
+    0.025321349866837217,
+    0.04901560762484815,
+    -0.02070477689663392,
+    0.04820862398826026,
+    0.016508721628935658,
+    -0.08474557273444026,
+    0.03190682963129203
+  ],
+  "outputs": {
+    "gender_direction_npy": "outputs/prep/gender_direction.npy",
+    "gender_subspace_components_npy": "outputs/prep/gender_subspace_components.npy"
+  },
+  "notes": {
+    "method": "PCA on centered definitional pair vectors (Bolukbasi et al., 2016).",
+    "direction": "First principal component (PC1).",
+    "subspace": "Span of top-k principal components."
+  }
+}

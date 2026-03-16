@@ -1,0 +1,14 @@
+{
+  "setting": {
+    "before": {
+      "RG65_spearman": 0.7600585719069962,
+      "WS353_spearman": 0.6941224810339759,
+      "MSR_analogy_acc": 0.5483147692752784
+    },
+    "hard_debiased": {
+      "RG65_spearman": 0.7598181715305808,
+      "WS353_spearman": 0.692274923687287,
+      "MSR_analogy_acc": 0.5469405467958918
+    }
+  }
+}

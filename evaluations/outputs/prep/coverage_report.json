@@ -1,0 +1,272 @@
+{
+  "embedding": {
+    "path": "GoogleNews-vectors-negative300.bin.gz",
+    "binary": true,
+    "vocab_size": 3000000,
+    "vector_dim": 300
+  },
+  "preprocessing_policy": {
+    "token_lookup_fallback_order": [
+      "exact",
+      "spaces_to_underscores",
+      "lower",
+      "lower_spaces_to_underscores",
+      "title",
+      "title_spaces_to_underscores",
+      "upper",
+      "upper_spaces_to_underscores"
+    ],
+    "oov_policy": "exclude OOV words from downstream lists; report coverage",
+    "vector_normalization": "L2 normalize every vector before subspace/bias computations"
+  },
+  "coverage": {
+    "definitional_pairs": {
+      "total_pairs": 10,
+      "left_found": 10,
+      "right_found": 10,
+      "both_found": 10,
+      "pair_coverage": 1.0,
+      "rows": [
+        {
+          "left_original": "he",
+          "left_in_vocab": true,
+          "left_found_token": "he",
+          "left_strategy": "exact",
+          "right_original": "she",
+          "right_in_vocab": true,
+          "right_found_token": "she",
+          "right_strategy": "exact",
+          "pair_usable": true
+        },
+        {
+          "left_original": "man",
+          "left_in_vocab": true,
+          "left_found_token": "man",
+          "left_strategy": "exact",
+          "right_original": "woman",
+          "right_in_vocab": true,
+          "right_found_token": "woman",
+          "right_strategy": "exact",
+          "pair_usable": true
+        },
+        {
+          "left_original": "father",
+          "left_in_vocab": true,
+          "left_found_token": "father",
+          "left_strategy": "exact",
+          "right_original": "mother",
+          "right_in_vocab": true,
+          "right_found_token": "mother",
+          "right_strategy": "exact",
+          "pair_usable": true
+        },
+        {
+          "left_original": "boy",
+          "left_in_vocab": true,
+          "left_found_token": "boy",
+          "left_strategy": "exact",
+          "right_original": "girl",
+          "right_in_vocab": true,
+          "right_found_token": "girl",
+          "right_strategy": "exact",
+          "pair_usable": true
+        },
+        {
+          "left_original": "brother",
+          "left_in_vocab": true,
+          "left_found_token": "brother",
+          "left_strategy": "exact",
+          "right_original": "sister",
+          "right_in_vocab": true,
+          "right_found_token": "sister",
+          "right_strategy": "exact",
+          "pair_usable": true
+        },
+        {
+          "left_original": "son",
+          "left_in_vocab": true,
+          "left_found_token": "son",
+          "left_strategy": "exact",
+          "right_original": "daughter",
+          "right_in_vocab": true,
+          "right_found_token": "daughter",
+          "right_strategy": "exact",
+          "pair_usable": true
+        },
+        {
+          "left_original": "king",
+          "left_in_vocab": true,
+          "left_found_token": "king",
+          "left_strategy": "exact",
+          "right_original": "queen",
+          "right_in_vocab": true,
+          "right_found_token": "queen",
+          "right_strategy": "exact",
+          "pair_usable": true
+        },
+        {
+          "left_original": "male",
+          "left_in_vocab": true,
+          "left_found_token": "male",
+          "left_strategy": "exact",
+          "right_original": "female",
+          "right_in_vocab": true,
+          "right_found_token": "female",
+          "right_strategy": "exact",
+          "pair_usable": true
+        },
+        {
+          "left_original": "him",
+          "left_in_vocab": true,
+          "left_found_token": "him",
+          "left_strategy": "exact",
+          "right_original": "her",
+          "right_in_vocab": true,
+          "right_found_token": "her",
+          "right_strategy": "exact",
+          "pair_usable": true
+        },
+        {
+          "left_original": "his",
+          "left_in_vocab": true,
+          "left_found_token": "his",
+          "left_strategy": "exact",
+          "right_original": "hers",
+          "right_in_vocab": true,
+          "right_found_token": "hers",
+          "right_strategy": "exact",
+          "pair_usable": true
+        }
+      ]
+    },
+    "occupations": {
+      "total": 10,
+      "found": 10,
+      "missing": 0,
+      "coverage": 1.0,
+      "strategy_counts": {
+        "exact": 10
+      },
+      "rows": [
+        {
+          "original": "doctor",
+          "in_vocab": true,
+          "found_token": "doctor",
+          "strategy": "exact"
+        },
+        {
+          "original": "nurse",
+          "in_vocab": true,
+          "found_token": "nurse",
+          "strategy": "exact"
+        },
+        {
+          "original": "engineer",
+          "in_vocab": true,
+          "found_token": "engineer",
+          "strategy": "exact"
+        },
+        {
+          "original": "teacher",
+          "in_vocab": true,
+          "found_token": "teacher",
+          "strategy": "exact"
+        },
+        {
+          "original": "scientist",
+          "in_vocab": true,
+          "found_token": "scientist",
+          "strategy": "exact"
+        },
+        {
+          "original": "programmer",
+          "in_vocab": true,
+          "found_token": "programmer",
+          "strategy": "exact"
+        },
+        {
+          "original": "homemaker",
+          "in_vocab": true,
+          "found_token": "homemaker",
+          "strategy": "exact"
+        },
+        {
+          "original": "manager",
+          "in_vocab": true,
+          "found_token": "manager",
+          "strategy": "exact"
+        },
+        {
+          "original": "lawyer",
+          "in_vocab": true,
+          "found_token": "lawyer",
+          "strategy": "exact"
+        },
+        {
+          "original": "librarian",
+          "in_vocab": true,
+          "found_token": "librarian",
+          "strategy": "exact"
+        }
+      ]
+    }
+  },
+  "sanity_checks": {
+    "he": {
+      "in_vocab": true,
+      "found_token": "he",
+      "strategy": "exact",
+      "norm_after_normalization": 1.0,
+      "vector_dim": 300
+    },
+    "she": {
+      "in_vocab": true,
+      "found_token": "she",
+      "strategy": "exact",
+      "norm_after_normalization": 1.0,
+      "vector_dim": 300
+    },
+    "man": {
+      "in_vocab": true,
+      "found_token": "man",
+      "strategy": "exact",
+      "norm_after_normalization": 1.0,
+      "vector_dim": 300
+    },
+    "woman": {
+      "in_vocab": true,
+      "found_token": "woman",
+      "strategy": "exact",
+      "norm_after_normalization": 0.9999999999999999,
+      "vector_dim": 300
+    },
+    "doctor": {
+      "in_vocab": true,
+      "found_token": "doctor",
+      "strategy": "exact",
+      "norm_after_normalization": 1.0,
+      "vector_dim": 300
+    },
+    "nurse": {
+      "in_vocab": true,
+      "found_token": "nurse",
+      "strategy": "exact",
+      "norm_after_normalization": 0.9999999999999999,
+      "vector_dim": 300
+    },
+    "engineer": {
+      "in_vocab": true,
+      "found_token": "engineer",
+      "strategy": "exact",
+      "norm_after_normalization": 1.0,
+      "vector_dim": 300
+    },
+    "teacher": {
+      "in_vocab": true,
+      "found_token": "teacher",
+      "strategy": "exact",
+      "norm_after_normalization": 1.0,
+      "vector_dim": 300
+    }
+  }
+}

@@ -1,0 +1,43 @@
+{
+  "appropriate_pairs": [
+    [
+      "queen",
+      "king"
+    ],
+    [
+      "mother",
+      "father"
+    ],
+    [
+      "sister",
+      "brother"
+    ]
+  ],
+  "stereotype_pairs": [
+    [
+      "nurse",
+      "doctor"
+    ],
+    [
+      "homemaker",
+      "programmer"
+    ],
+    [
+      "receptionist",
+      "boss"
+    ]
+  ],
+  "female_coded": [
+    "nurse",
+    "receptionist",
+    "homemaker",
+    "librarian"
+  ],
+  "male_coded": [
+    "doctor",
+    "programmer",
+    "engineer",
+    "boss",
+    "pilot"
+  ]
+}

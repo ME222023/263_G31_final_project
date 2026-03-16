@@ -1,0 +1,26 @@
+{
+  "seed": [
+    "she",
+    "he"
+  ],
+  "topn": 150,
+  "delta": 1.0,
+  "lexicon_path": "data/stereotype_lexicon.json",
+  "before": {
+    "n": 150,
+    "stereotype_yes": 0,
+    "appropriate_yes": 0,
+    "unknown": 150,
+    "stereotype_rate": 0.0,
+    "appropriate_rate": 0.0
+  },
+  "after": {
+    "n": 150,
+    "stereotype_yes": 0,
+    "appropriate_yes": 2,
+    "unknown": 148,
+    "stereotype_rate": 0.0,
+    "appropriate_rate": 0.013333333333333334
+  },
+  "notes": "Paper uses MTurk for stereotype labels; here replaced with deterministic lexicon/heuristic for reproducibility."
+}

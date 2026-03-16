@@ -1,0 +1,11 @@
+{
+  "timestamp": "2026-03-01T21:24:17",
+  "DirectBias_c1": {
+    "before": 0.08345093810532205,
+    "hard_debiased": 0.0799478103584654
+  },
+  "notes": {
+    "neutral_words_source": "data/occupations.txt",
+    "gender_direction": "outputs/prep/gender_direction.npy"
+  }
+}
