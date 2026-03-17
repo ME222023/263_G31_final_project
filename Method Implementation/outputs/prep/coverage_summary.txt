@@ -1,0 +1,26 @@
+=== Embedding ===
+Path: GoogleNews-vectors-negative300.bin.gz
+Vocab size: 3,000,000
+Vector dim: 300
+
+=== Definitional Pairs Coverage ===
+Total pairs: 10
+Both found: 10
+Pair coverage: 1.0000
+
+=== Occupations Coverage ===
+Total words: 10
+Found: 10
+Missing: 0
+Coverage: 1.0000
+Strategy counts: {'exact': 10}
+
+=== Sanity Checks ===
+he: {'in_vocab': True, 'found_token': 'he', 'strategy': 'exact', 'norm_after_normalization': 1.0, 'vector_dim': 300}
+she: {'in_vocab': True, 'found_token': 'she', 'strategy': 'exact', 'norm_after_normalization': 1.0, 'vector_dim': 300}
+man: {'in_vocab': True, 'found_token': 'man', 'strategy': 'exact', 'norm_after_normalization': 1.0, 'vector_dim': 300}
+woman: {'in_vocab': True, 'found_token': 'woman', 'strategy': 'exact', 'norm_after_normalization': 0.9999999999999999, 'vector_dim': 300}
+doctor: {'in_vocab': True, 'found_token': 'doctor', 'strategy': 'exact', 'norm_after_normalization': 1.0, 'vector_dim': 300}
+nurse: {'in_vocab': True, 'found_token': 'nurse', 'strategy': 'exact', 'norm_after_normalization': 0.9999999999999999, 'vector_dim': 300}
+engineer: {'in_vocab': True, 'found_token': 'engineer', 'strategy': 'exact', 'norm_after_normalization': 1.0, 'vector_dim': 300}
+teacher: {'in_vocab': True, 'found_token': 'teacher', 'strategy': 'exact', 'norm_after_normalization': 1.0, 'vector_dim': 300}

@@ -1,0 +1,10 @@
+doctor
+nurse
+engineer
+teacher
+scientist
+programmer
+homemaker
+manager
+lawyer
+librarian
